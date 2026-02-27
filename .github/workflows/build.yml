@@ -19,7 +19,7 @@ jobs:
       - name: Build with PyInstaller
         run: pyinstaller --onefile --windowed main.py --name RamielVoiceCloningApp
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: RamielVoiceCloningApp
           path: dist/RamielVoiceCloningApp.exe
